@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PR Calc</string>
+    <string name="app_name_long">Passer Rating Calculator</string>
+
+    <string name="instructions">Enter QB Stats to Calculate Rating</string>
+    
+    <string name="att_label">ATT</string>
+    <string name="comp_label">COMP</string>
+    <string name="yds_label">YDS</string>
+    <string name="td_label">TD</string>
+    <string name="int_label">INT</string>
+    
+    <string name="att_clear">Clear ATT</string>
+    <string name="comp_clear">Clear CP</string>
+    <string name="yds_clear">Clear YDS</string>
+    <string name="td_clear">Clear TD</string>
+    <string name="int_clear">Clear INT</string>
+
+    <string name="calculate_button_label">Calculate</string>
+    <string name="clear_button_label">Clear All</string>
+
+    <string name="rating_placeholder_label">0</string>
+
+    <string name="empty_text_snackbar">Please enter all required stats.</string>
+    <string name="snackbar_close">CLOSE</string>
+
+</resources>

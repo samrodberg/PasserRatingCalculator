@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+
+    <LinearLayout
+        android:id="@+id/instruction_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/att_section"
+        android:layout_below="@id/instruction_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        style="@style/LinearLayoutMarginsLR">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/att"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/att_label"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/att_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/clear_att_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/att_clear"
+            android:layout_weight="1"
+            style="@style/GreenButtonWhiteText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comp_section"
+        android:layout_below="@id/att_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        style="@style/LinearLayoutMarginsLR">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/comp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/comp_label"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/comp_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/clear_comp_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/comp_clear"
+            android:layout_weight="1"
+            style="@style/GreenButtonWhiteText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yds_section"
+        android:layout_below="@id/comp_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        style="@style/LinearLayoutMarginsLR">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/yards"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yds_label"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/yds_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/clear_yds_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/yds_clear"
+            android:layout_weight="1"
+            style="@style/GreenButtonWhiteText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/td_section"
+        android:layout_below="@id/yds_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        style="@style/LinearLayoutMarginsLR">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/td"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/td_label"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/td_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/clear_td_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/td_clear"
+            android:layout_weight="1"
+            style="@style/GreenButtonWhiteText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/int_section"
+        android:layout_below="@id/td_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        style="@style/LinearLayoutMarginsLR">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/interceptions"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_label"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/int_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/clear_int_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/int_clear"
+            android:layout_weight="1"
+            style="@style/GreenButtonWhiteText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_section"
+        android:layout_below="@id/int_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <Button
+            android:id="@+id/clear_all_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clear_button_label"
+            style="@style/GreenButtonWhiteText"/>
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/calculate_button_label"
+            style="@style/GreenButtonWhiteText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_section"
+        android:layout_below="@id/button_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/rating_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_placeholder_label"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="40sp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
